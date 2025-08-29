@@ -9,15 +9,16 @@ record_user_details_json = {
         "properties": {
             "email": {
                 "type": "string",
-                "description": "The email address of the user"
+                "description": "The email address of this user"
             },
             "name": {
                 "type": "string",
                 "description": "The user's name, if they provided it"
-            },
+            }
+            ,
             "notes": {
                 "type": "string",
-                "description": "Any additional information about the conversation that's worth recording."
+                "description": "Any additional information about the conversation that's worth recording to give context"
             }
         },
         "required": ["email"],
@@ -28,19 +29,19 @@ record_user_details_json = {
 # stores questions which are unknown or unanswerable by the llm. 
 record_unknown_question_json = {
     "name": "record_unknown_question",
-    "description": "Always use this tool to record any question that couldn't be answered as you didn't know the answer to it.",
+    "description": "Always use this tool to record any question that couldn't be answered as you didn't know the answer",
     "parameters": {
         "type": "object",
         "properties": {
             "question": {
                 "type": "string",
-                "description": "The question that couldn't be answered."
-            }
+                "description": "The question that couldn't be answered"
+            },
         },
         "required": ["question"],
         "additionalProperties": False
     }
 }
 
-tools = [{"type": "function", "function": record_user_details_json}, 
-         {"type": "function", "function": record_unknown_question_json}]
+tools = [{"type": "function", "function": record_user_details_json},
+        {"type": "function", "function": record_unknown_question_json}]
