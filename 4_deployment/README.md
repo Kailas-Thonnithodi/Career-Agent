@@ -1,6 +1,6 @@
 ---
-title: career_conversation
+title: Career-Agent
 app_file: agent.py
 sdk: gradio
-sdk_version: 5.34.2
+sdk_version: 5.44.1
 ---
