@@ -88,8 +88,8 @@ class Person:
 if __name__ == "__main__":
     
     # links
-    pdf_path = r"/Users/goldenmeta/Github/Career-Agent/3_linkedln/LinkedlnProfilePDF.pdf"
-    website_path = r"/Users/goldenmeta/Github/Career-Agent/3_linkedln/LinkedlnProfileWebsite.txt"
+    pdf_path = r"LinkedlnProfilePDF.pdf"
+    website_path = r"LinkedlnProfileWebsite.txt"
     
     # agent specifically for kailas
     kailas_agent = Person("Kailas Thonnithodi")
