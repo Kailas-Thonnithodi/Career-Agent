@@ -1,5 +1,6 @@
 # Career-Agent
 Personal chatbot (using ChatGPT 4o mini) for linkedin profiling research and conversation. 
+Deployed model can be accessed on: https://huggingface.co/spaces/GoldenMeta/Career-Agent
 
 ## Project Brief
 * The model must have the capability of responding to questions regarding the pdf (inserted into the 3_linkedin folder).
